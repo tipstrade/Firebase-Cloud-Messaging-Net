@@ -22,7 +22,7 @@ namespace net.tipstrade.FCMNet.Responses {
     /// Gets or sets the unique ID identifying the multicast message.
     /// </summary>
     [JsonProperty("multicast_id")]
-    public UInt64 MulticastID { get; set; }
+    public Int64 MulticastID { get; set; }
 
     /// <summary>
     /// Gets or sets the list of results respresenting the status of the messages processed.
