@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Firebase-Cloud-Messaging-Net")]
-[assembly: AssemblyDescription("A .Net library for sending Firebase Cloud Messages")]
+[assembly: AssemblyTitle("Tests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("TipsTrade Ltd.")]
-[assembly: AssemblyProduct("Firebase-Cloud-Messaging-Net")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("81bf97fb-2753-43bb-9907-8a795e28ad7b")]
+[assembly: Guid("798805bb-72a8-4715-bf13-210076807265")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -33,3 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

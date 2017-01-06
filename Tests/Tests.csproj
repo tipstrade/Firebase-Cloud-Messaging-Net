@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDBDFC2C-66C4-47CA-BFCE-6B5B8B699121}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{C24D0758-719B-4F67-85C9-8BD0346173CD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>net.tipstrade.FCMNet</RootNamespace>
-    <AssemblyName>Firebase-Cloud-Messaging-Net</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -37,7 +39,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,23 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converters\FCMColorJsonConverter.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests\AndroidNotification.cs" />
-    <Compile Include="Requests\Enumerations.cs" />
-    <Compile Include="Requests\iOSNotification.cs" />
-    <Compile Include="Requests\LocalizedNotification.cs" />
-    <Compile Include="Requests\Message.cs" />
-    <Compile Include="Requests\Notification.cs" />
-    <Compile Include="Responses\Enumerations.cs" />
-    <Compile Include="Responses\Response.cs" />
-    <Compile Include="Responses\Result.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Firebase-Cloud-Messaging-Net.nuspec" />
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Firebase-Cloud-Messaging-Net\Firebase-Cloud-Messaging-Net.csproj">
+      <Project>{bdbdfc2c-66c4-47ca-bfce-6b5b8b699121}</Project>
+      <Name>Firebase-Cloud-Messaging-Net</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
