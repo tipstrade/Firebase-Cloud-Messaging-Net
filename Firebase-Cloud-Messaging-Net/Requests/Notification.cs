@@ -14,10 +14,10 @@ namespace net.tipstrade.FCMNet.Requests {
     public string Body { get; set; }
 
     /// <summary>
-    /// Gets or sets the URL of the notification's icon.
+    /// Gets or sets the URL or name of the notification's icon.
     /// </summary>
     [JsonProperty("icon", NullValueHandling = NullValueHandling.Ignore)]
-    public Uri Icon { get; set; }
+    public string Icon { get; set; }
 
     /// <summary>
     /// Gets or sets the action associated with a user click on the notification.
