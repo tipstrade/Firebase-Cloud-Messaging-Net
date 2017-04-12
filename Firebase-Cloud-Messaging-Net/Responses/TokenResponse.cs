@@ -9,6 +9,7 @@ namespace net.tipstrade.FCMNet.Responses
 {
     public class TokenResponse
     {
+        // ini comment 
         [JsonProperty("notification_key")]
         public string Notification_key { get; set; }
 
