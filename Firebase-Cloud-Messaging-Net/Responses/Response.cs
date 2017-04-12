@@ -5,7 +5,8 @@ namespace net.tipstrade.FCMNet.Responses {
   /// <summary>
   /// Represents a Firebase Cloud Messaging message response object.
   /// </summary>
-  public class Response {
+    public class Response
+    {
     /// <summary>
     /// Gets or sets the nuber of results that contain a canonical registration token.
     /// </summary>

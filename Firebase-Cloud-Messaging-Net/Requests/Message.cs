@@ -115,14 +115,19 @@ namespace net.tipstrade.FCMNet.Requests {
     /// </summary>
     /// <param name="key">The Firebase Cloud Messaging authorization key.</param>
     public Responses.Response Send(string key) {
+       
       var req = (HttpWebRequest)HttpWebRequest.Create(FCMSendUri);
       req.Method = "POST";
       req.ContentType = "application/json";
-      req.Headers.Add("Authorization", "key=" + key);
+      //req.Headers.Add("Authorization", "key=" + key);
+        req.Headers.Add(string.Format("Authorization: key={0}", key));
+
 
       using (var writer = new StreamWriter(req.GetRequestStream())) {
+          writer.NewLine = "";
 #if DEBUG
-        var json = JsonConvert.SerializeObject(this);
+        var json = JsonConvert.SerializeObject(this
+         );
 #endif
         writer.Write(JsonConvert.SerializeObject(this));
       }

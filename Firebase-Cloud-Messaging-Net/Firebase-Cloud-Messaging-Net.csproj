@@ -53,9 +53,11 @@
     <Compile Include="Requests\LocalizedNotification.cs" />
     <Compile Include="Requests\Message.cs" />
     <Compile Include="Requests\Notification.cs" />
+    <Compile Include="Requests\Token.cs" />
     <Compile Include="Responses\Enumerations.cs" />
     <Compile Include="Responses\Response.cs" />
     <Compile Include="Responses\Result.cs" />
+    <Compile Include="Responses\TokenResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Firebase-Cloud-Messaging-Net.nuspec" />
