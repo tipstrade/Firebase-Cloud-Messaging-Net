@@ -8,10 +8,10 @@ namespace net.tipstrade.FCMNet.Requests {
   [JsonConverter(typeof(StringEnumConverter))]
   public enum Priority {
     /// <summary></summary>
-    [EnumMember(Value = " normal")]
+    [EnumMember(Value = "normal")]
     Normal,
     /// <summary></summary>
-    [EnumMember(Value = " high")]
+    [EnumMember(Value = "high")]
     High
   }
 }
